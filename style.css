@@ -1,0 +1,165 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image:  url("images/bg-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 120px);
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color:white;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    margin:24px 0;
+    line-height: 1.6;
+}
+
+button{
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: hsl(257, 40%, 49%);
+    padding: 16px 60px;
+    -webkit-box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.5);
+    box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.5);
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color:white;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+}
+  
+
+li{
+    float: left;
+    color:white;
+    display: block;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+li:hover{
+    color:hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+
+}
+
+.hero{
+    display: flex;
+    gap: 60px;
+    height: calc(100vh - 130px);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: auto;
+    max-width: 1800px;
+    padding-bottom: 40px;
+
+}
+
+.hero-img{
+    width: 50vw;
+    
+    /* max-width: 800px; */
+    /* max-height: 800px; */
+
+}
+
+
+@media screen and (max-width: 800px) {
+    body{
+        background-image:  url("images/bg-mobile.svg");
+        background-size: 100vw;
+
+        margin: 40px 32px;
+        justify-content: space-between;
+        height: calc(100vh - 80px);
+    }
+
+    .hero{
+        flex-direction: column;
+        padding-top: 32px;
+        padding-bottom: 0;
+        height: auto;
+        gap: 32px;
+
+    }
+
+    .logo-img{
+        height:32px;
+    }
+
+    .hero-img{
+        width: 100%;
+    }
+    .hero-text{
+        text-align: center;
+    }
+    h1{
+        font-size: 24px;
+
+    }
+    p{
+        font-size: 14px;
+
+    }
+    button{
+        padding: 12px 80px;
+        font-size: 12px;
+    }
+
+    ul{
+        position: relative;
+        align-self: center;
+        top: 0;
+        left: 0;
+        justify-self: end;
+        margin-top: 12px;
+    }
+    li{
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 32px;
+        border-radius: 50%;
+        margin-left: 12px;
+    }
+    
+}
